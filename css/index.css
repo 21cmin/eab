@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+nav .nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav .nav-wrapper .logo {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav .nav-wrapper .menu {
+  display: flex;
+  list-style: none;
+}
+
+nav .nav-wrapper .menu li {
+  margin-left: 20px;
+}
+
+nav .nav-wrapper .menu a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+nav .nav-separator {
+  border-top: 1px solid gray;
+}
+
+article .article-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+article .article-wrapper .privacy-text {
+  margin: 20px;
+}

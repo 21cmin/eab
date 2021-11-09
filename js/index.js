@@ -5,10 +5,10 @@ const myLessonMenu = document.querySelector('#menu-my-lesson');
 const schedulerMenu = document.querySelector('#menu-scheduler')
 const shoppingCartMenu = document.querySelector('#menu-shopping-cart')
 
-const myLessonURL = "../data/my_lesson"
-const schedulerURL  = "../data/scheduler"
-const shoppingCartURL  = "../data/shoppingCart"
-const seoulBusURL  = "../data/seoul-bus"
+const myLessonURL = "https://raw.githubusercontent.com/21cmin/eab/main/data/my_lesson"
+const schedulerURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/scheduler"
+const shoppingCartURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/shoppingCart"
+const seoulBusURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/seoul-bus"
 
 const fetchPrivacy = async (url) => {
   const data = await fetch(url);

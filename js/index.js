@@ -8,6 +8,7 @@ const shoppingCartMenu = document.querySelector('#menu-shopping-cart')
 const myLessonURL = "../data/my_lesson"
 const schedulerURL  = "../data/scheduler"
 const shoppingCartURL  = "../data/shoppingCart"
+const seoulBusURL  = "../data/seoul-bus"
 
 const fetchPrivacy = async (url) => {
   const data = await fetch(url);
@@ -34,6 +35,10 @@ const relocation = () => {
       break;
     case "shopping-cart":
       fetchPrivacy(shoppingCartURL);
+      break;
+    case "seoul-bus":
+      fetchPrivacy(seoulBusURL);
+      break;
     default:
       break;
   }
@@ -49,13 +54,5 @@ shoppingCartMenu.addEventListener('click', () => {
   const text = fetchPrivacy(shoppingCartURL)
 })
 window.addEventListener('popstate', relocation);
+
 relocation();
-
-
-
-
-
-
-
-
-

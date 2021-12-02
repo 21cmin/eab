@@ -9,6 +9,7 @@ const myLessonURL = "https://raw.githubusercontent.com/21cmin/eab/main/data/my_l
 const schedulerURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/scheduler"
 const shoppingCartURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/shoppingCart"
 const seoulBusURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/seoul-bus"
+const dustURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/dust"
 
 const fetchPrivacy = async (url) => {
   const data = await fetch(url);
@@ -38,6 +39,9 @@ const relocation = () => {
       break;
     case "seoul-bus":
       fetchPrivacy(seoulBusURL);
+      break;
+    case "dust":
+      fetchPrivacy(dustURL);
       break;
     default:
       break;

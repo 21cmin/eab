@@ -57,6 +57,9 @@ schedulerMenu.addEventListener('click', () => {
 shoppingCartMenu.addEventListener('click', () => {
   const text = fetchPrivacy(shoppingCartURL)
 })
+shoppingCartMenu.addEventListener('click', () => {
+  const text = fetchPrivacy(dustURL)
+})
 window.addEventListener('popstate', relocation);
 
 relocation();

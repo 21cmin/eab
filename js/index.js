@@ -4,6 +4,7 @@ const privacyText = document.querySelector('.privacy-text');
 const myLessonMenu = document.querySelector('#menu-my-lesson');
 const schedulerMenu = document.querySelector('#menu-scheduler')
 const shoppingCartMenu = document.querySelector('#menu-shopping-cart')
+const keventMenu = document.querySelector('#menu-kevent')
 
 const myLessonURL = "https://raw.githubusercontent.com/21cmin/eab/main/data/my_lesson"
 const schedulerURL  = "https://raw.githubusercontent.com/21cmin/eab/main/data/scheduler"
@@ -63,6 +64,9 @@ shoppingCartMenu.addEventListener('click', () => {
 })
 shoppingCartMenu.addEventListener('click', () => {
   const text = fetchPrivacy(dustURL)
+})
+keventMenu.addEventListener('click', () => {
+  const text = fetchPrivacy(keventURL)
 })
 window.addEventListener('popstate', relocation);
 
